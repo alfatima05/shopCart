@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { ProductsData } from "../ProductsData";
 
 //Create a variable for the initialState and assign the data from the ProductsData
-const initialState = { value: ProductsData };
+const initialState = { value: ProductsData }; // %%%%%%%%%
 
 export const productSlice = createSlice({
   //create the reducters

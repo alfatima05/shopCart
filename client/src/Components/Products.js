@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 const Products = () => {
   //Declare a variable to store the current value of the producs state from the Redux store (in inspact ) **** 4.B
-  const productList = useSelector((state) => state.product.value);
+  const productList = useSelector((state) => state.products.value);
 
   return (
     <Container>
@@ -17,7 +17,7 @@ const Products = () => {
 
             <tbody>
               {productList.map((prod) => (
-                <tr key={id}>
+                <tr key={prod.id}>
                   <td>{prod.id}</td>
                   <td>{prod.title}</td>
                   <td>{prod.price}</td>
